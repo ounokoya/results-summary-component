@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { open, panel, summary, rows, row, style } from './helpers.js'
+import { open, panel, summary, rows, row, style, cssColor } from './helpers.js'
 
 // Spec §2 et §3 — S6 à S8
 
@@ -31,12 +31,12 @@ test('S7 — résumé : 4 catégories dans l\'ordre, avec leur note sur 100', as
 })
 
 test('S8 — couleurs AA de G2 : noms de catégorie, « / 100 », « Your Result »', async ({ page }) => {
-  const expected = { Reaction: 'rgb(224, 0, 0)', Memory: 'rgb(158, 103, 0)', Verbal: 'rgb(0, 128, 98)' }
+  const expected = { Reaction: 'hsl(0, 100%, 44%)', Memory: 'hsl(39, 100%, 31%)', Verbal: 'hsl(166, 100%, 25%)' }
   for (const [name, color] of Object.entries(expected)) {
-    expect(await style(row(page, name).getByText(name, { exact: true }), 'color'), name).toBe(color)
+    expect(await style(row(page, name).getByText(name, { exact: true }), 'color'), name).toBe(await cssColor(page, color))
   }
   for (const [name] of CATEGORIES) {
-    expect(await style(row(page, name).getByText('/ 100', { exact: true }), 'color'), `${name} « / 100 »`).toBe('rgb(103, 109, 126)')
+    expect(await style(row(page, name).getByText('/ 100', { exact: true }), 'color'), `${name} « / 100 »`).toBe(await cssColor(page, 'hsl(224, 10%, 45%)'))
   }
-  expect(await style(panel(page).getByRole('heading', { level: 1 }), 'color')).toBe('rgb(230, 229, 255)')
+  expect(await style(panel(page).getByRole('heading', { level: 1 }), 'color')).toBe(await cssColor(page, 'hsl(241, 100%, 95%)'))
 })
