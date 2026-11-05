@@ -33,10 +33,29 @@
   --color-link: hsl(228, 45%, 44%); /* G3-1 : liens de l'attribution (starter) */
 
   --font-sans: "Hanken Grotesk", sans-serif;
+  /* tailles de la maquette ; interligne « normal » de Hanken Grotesk (1,303) */
+  --text-small: 1rem;
+  --text-small--line-height: 1.303;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.303;
+  --text-heading: 1.5rem;
+  --text-heading--line-height: 1.303;
+  --text-great: 2rem;
+  --text-great--line-height: 1.303;
+  --text-score: 3.5rem;
+  --text-score--line-height: 1;
+  --text-score-lg: 4.5rem;
+  --text-score-lg--line-height: 1;
+  --text-attribution: 0.6875rem;
+  --text-attribution--line-height: 1.5;
+
+  --radius-card: 2rem;
+  --radius-row: 0.75rem;
+  --shadow-card: 0 1.875rem 3.75rem hsla(224, 82%, 58%, 0.15);
 }
 
 @layer base {
   body {
-    @apply font-sans font-medium text-dark-gray-blue;
+    @apply font-sans text-body font-medium text-dark-gray-blue;
   }
 }
