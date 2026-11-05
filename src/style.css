@@ -52,6 +52,24 @@
   --radius-card: 2rem;
   --radius-row: 0.75rem;
   --shadow-card: 0 1.875rem 3.75rem hsla(224, 82%, 58%, 0.15);
+  --shadow-button: 0 0.9375rem 1.875rem hsla(245, 90%, 60%, 0.25); /* survol de Continue (image d'états FM) */
+}
+
+/* Q-A3 : contour de focus de 2 px, décalé de 2 px (Continue et liens) */
+@utility focus-ring {
+  &:focus-visible {
+    outline: 0.125rem solid var(--color-dark-gray-blue);
+    outline-offset: 0.125rem;
+  }
+}
+
+/* G3-1 : liens de l'attribution, soulignés sauf au survol */
+@utility link {
+  color: var(--color-link);
+  text-decoration-line: underline;
+  &:hover {
+    text-decoration-line: none;
+  }
 }
 
 @layer base {
