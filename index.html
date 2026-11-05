@@ -7,21 +7,21 @@
     <title>Frontend Mentor | Results summary component</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    <main>
-      <section aria-labelledby="result-title" class="flex h-[22.25rem] flex-col items-center rounded-b-card bg-linear-to-b from-light-slate-blue to-light-royal-blue pt-6 text-center shadow-card">
-        <h1 id="result-title" class="font-bold text-your-result">Your Result</h1>
-        <p class="mt-[1.4375rem] flex size-[8.75rem] flex-col items-center rounded-full bg-linear-to-b from-violet-blue to-persian-blue pt-9">
-          <span class="text-score font-extrabold text-white">76</span>
-          <span class="mt-[0.4375rem] text-small text-light-lavender">of 100</span>
+  <body class="md:grid md:min-h-dvh md:grid-rows-[1fr_auto_1fr] md:bg-pale-blue">
+    <main class="md:row-start-2 md:mx-auto md:grid md:w-[46rem] md:grid-cols-2 md:rounded-card md:bg-white md:shadow-card">
+      <section aria-labelledby="result-title" class="flex h-[22.25rem] flex-col items-center rounded-b-card bg-linear-to-b from-light-slate-blue to-light-royal-blue pt-6 text-center shadow-card md:h-auto md:rounded-card md:pt-[2.375rem] md:shadow-none">
+        <h1 id="result-title" class="font-bold text-your-result md:text-heading">Your Result</h1>
+        <p class="mt-[1.4375rem] flex size-[8.75rem] flex-col items-center rounded-full bg-linear-to-b from-violet-blue to-persian-blue pt-9 md:mt-[2.1875rem] md:size-[12.5rem] md:pt-14">
+          <span class="text-score font-extrabold text-white md:text-score-lg">76</span>
+          <span class="mt-[0.4375rem] text-small text-light-lavender md:mt-[0.1875rem] md:text-body">of 100</span>
         </p>
-        <h2 class="mt-6 text-heading font-bold text-white">Great</h2>
-        <p class="mt-2 w-[16.3125rem] text-small/[1.375] text-light-lavender">You scored higher than 65% of the people who have taken these tests.</p>
+        <h2 class="mt-6 text-heading font-bold text-white md:mt-7 md:text-great">Great</h2>
+        <p class="mt-2 w-[16.3125rem] text-small/[1.375] text-light-lavender md:mt-3.5 md:w-[15.75rem] md:text-body/[1.278]">You scored higher than 65% of the people who have taken these tests.</p>
       </section>
 
-      <section aria-labelledby="summary-title" class="px-[1.875rem] pt-6 pb-[1.875rem]">
-        <h2 id="summary-title" class="font-bold">Summary</h2>
-        <ul aria-labelledby="summary-title" class="mt-[1.4375rem] space-y-4 text-small">
+      <section aria-labelledby="summary-title" class="px-[1.875rem] pt-6 pb-[1.875rem] md:px-10 md:pt-[2.375rem] md:pb-[2.875rem]">
+        <h2 id="summary-title" class="font-bold md:text-heading">Summary</h2>
+        <ul aria-labelledby="summary-title" class="mt-[1.4375rem] space-y-4 text-small md:mt-7 md:text-body">
           <li class="flex h-14 items-center gap-3 rounded-row bg-light-red/5 px-4">
             <img src="./assets/images/icon-reaction.svg" alt="" width="20" height="20">
             <span class="text-reaction-text">Reaction</span>
@@ -43,11 +43,11 @@
             <span class="ml-auto font-bold"><span>72</span> <span class="text-out-of">/ 100</span></span>
           </li>
         </ul>
-        <button type="button" class="mt-[1.5625rem] h-14 w-full cursor-pointer rounded-full bg-dark-gray-blue font-bold text-white">Continue</button>
+        <button type="button" class="mt-[1.5625rem] md:mt-[2.5625rem] h-14 w-full cursor-pointer rounded-full bg-dark-gray-blue font-bold text-white">Continue</button>
       </section>
     </main>
 
-    <footer class="py-4 text-center text-attribution">
+    <footer class="py-4 text-center text-attribution md:row-start-3 md:self-end">
       Challenge by <a class="text-link underline" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a class="text-link underline" href="https://www.frontendmentor.io/profile/ounokoya">Koya Esdras</a>.
     </footer>
