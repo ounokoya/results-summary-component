@@ -44,7 +44,8 @@ for (const width of [320, 767, 768, 1023, 1024, 1440]) {
 
 test('S5 — 1440 × 1080 : pied de page centré sous la carte, dans la fenêtre', async ({ page }) => {
   await open(page, 1440, 1080)
-  const f = await box(footer(page))
+  // boîte sans arrondi : 1031,5 + 48,5 deviendrait 1032 + 49
+  const f = await footer(page).boundingBox()
   const text = await footer(page).evaluate((el) => {
     const r = document.createRange(); r.selectNodeContents(el); const b = r.getBoundingClientRect()
     return { left: b.left, right: b.right }
