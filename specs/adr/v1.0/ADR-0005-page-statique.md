@@ -16,7 +16,7 @@ Le starter fournit un `data.json` (les 4 catégories et leurs notes) pour qui ve
 - Les 4 lignes sont écrites dans `index.html` ; `src/main.js` n'importe que la feuille de style.
 - Icônes de catégorie : `img` des fichiers du starter, `alt=""` (décoratives, A3).
 - « Continue » : `button type="button"`, sans gestionnaire.
-- Note « Visual » : 72, la valeur du HTML et de `data.json` du starter (Q-C1, voir la spec).
+- Note « Visual » : 72, la valeur du HTML et de `data.json` du starter (Q-C1, choix de Koya, voir la spec).
 
 ## Conséquences
 - Aucune erreur JavaScript possible à l'exécution : le seul script de la page importe la feuille de style.

@@ -37,3 +37,11 @@ Koya : « Je valide (G3) » pour le lot 1. Maquette : `specs/visuel/penpot/maque
 | G3-1 | Attribution FM (absente des images) | Gardée en pied de page : « Challenge by Frontend Mentor. Coded by Koya Esdras. », 11 px, liens `#3E52A3` soulignés ; survol : soulignement retiré ; focus : contour 2 px Dark gray blue décalé de 2 px |
 | G3-2 | Tablette (Q-B3) | Carte desktop de 736 × 512 centrée sur Pale blue |
 | G3-3 | Seuils visuels | 5 % pour les 3 écrans calibrés |
+
+## Spec, ADR et verrou code (2026-11-05)
+
+- Spec : `specs/specifications/results-summary-component.md` ; tests écrits avant le code, contrôle rouge fait (voir les commits `test:`).
+- ADR : `specs/adr/v1.0/` (ADR-0003 à ADR-0006).
+- **Q-C1** (image FM « Visual 73 », starter 72) : Koya choisit **72**, comme le HTML et `data.json` du starter (cohérent avec la moyenne de 76).
+- **Verrou code** : Koya confirme « Claude écrit le code ».
+

@@ -13,7 +13,7 @@ Un composant qui résume le résultat d'un test : une note globale sur 100 et so
 |---|---|---|
 | Panneau de résultat | « Your Result » ; note « 76 » et « of 100 » ; « Great » ; « You scored higher than 65% of the people who have taken these tests. » | `section` ; `h1` ; la note et « of 100 » se lisent ensemble (« 76 of 100 ») ; `h2` ; `p` |
 | Résumé | titre « Summary » ; 4 lignes : icône, nom, note « N / 100 » | `section` ; `h2` ; `ul` nommée par le titre, un `li` par catégorie ; icônes décoratives |
-| Catégories | Reaction 80, Memory 92, Verbal 61, Visual **72** (Q-C1 : valeur du HTML et de `data.json`, cohérente avec la moyenne de 76 ; l'image FM montre 73) | — |
+| Catégories | Reaction 80, Memory 92, Verbal 61, Visual **72** (Q-C1, choix de Koya : valeur du HTML et de `data.json`, cohérente avec la moyenne de 76 ; l'image FM montre 73) | — |
 | Continue | « Continue » | `button type="button"` (Q-B2) |
 | Pied de page (G3-1) | « Challenge by Frontend Mentor. Coded by Koya Esdras. » ; liens vers `https://www.frontendmentor.io?ref=challenge` et `https://www.frontendmentor.io/profile/ounokoya` | `footer` |
 
