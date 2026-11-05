@@ -27,3 +27,13 @@ Koya : « Je valide (G2) » pour le lot 1. Analyse : `specs/visuel/results-summa
 | Q-B1 | data.json | Contenu écrit dans le HTML, pas de JavaScript |
 | Q-B2 | « Continue » sans destination | button type="button" sans action |
 | Q-B3 | Pas de maquette tablette | Carte desktop centrée dès 768 px ; disposition mobile en dessous |
+
+## Maquette validée (G3, 2026-11-05)
+
+Koya : « Je valide (G3) » pour le lot 1. Maquette : `specs/visuel/penpot/maquette.md`. Toutes les propositions sont retenues.
+
+| # | Point | Décision |
+|---|---|---|
+| G3-1 | Attribution FM (absente des images) | Gardée en pied de page : « Challenge by Frontend Mentor. Coded by Koya Esdras. », 11 px, liens `#3E52A3` soulignés ; survol : soulignement retiré ; focus : contour 2 px Dark gray blue décalé de 2 px |
+| G3-2 | Tablette (Q-B3) | Carte desktop de 736 × 512 centrée sur Pale blue |
+| G3-3 | Seuils visuels | 5 % pour les 3 écrans calibrés |

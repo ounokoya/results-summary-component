@@ -1,6 +1,6 @@
 # Maquette Penpot — Results summary component
 
-> SDL-FM 1.5.0 Phase 3 (remise à niveau, lot 1). Fichier Penpot : « FM Newbie » (créé par Koya ; nom vérifié avant chaque écriture), page « Results summary ». **En attente de validation (G3).**
+> SDL-FM 1.5.0 Phase 3 (remise à niveau, lot 1). Fichier Penpot : « FM Newbie » (créé par Koya ; nom vérifié avant chaque écriture), page « Results summary ». **Validée (G3, 2026-11-05)** avec les propositions : tablette (carte desktop centrée, Q-B3), attribution FM en pied de page (11 px, liens `#3E52A3`, survol sans soulignement, contour de focus Dark gray blue), seuils de 5 %.
 > Décisions G2 appliquées : textes de catégorie en couleurs AA (Q-A1), « / 100 », « of 100 » et « Your Result » éclaircis ou foncés (Q-A2), contour de focus 2 px décalé de 2 px (Q-A3), contenu dans le HTML (Q-B1), Continue en `button type="button"` (Q-B2), tablette proposée (Q-B3).
 
 ## Rendu des exports
