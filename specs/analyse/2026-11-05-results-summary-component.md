@@ -47,6 +47,10 @@ Constats de la construction (Phase 6), sans écart restant :
 - Chromium sous Linux lisse le texte en LCD (franges colorées) : les comparaisons visuelles tournent avec `--disable-lcd-text`, comme les images FM et les rendus de la maquette, lissés en gris.
 - S5 : la boîte du pied de page est lue sans arrondi (1031,5 + 48,5 = 1080, mais 1032 + 49 = 1081).
 
-## 4. Verdict
+## 4. En ligne (Phase 12)
+
+`BASE_URL=https://ounokoya.github.io/results-summary-component/ npx playwright test --workers=2` : **30 réussis sur 30**, sur la v1.0.0 déployée depuis la branche `gh-pages` (dépôt public créé avec l'accord de Koya).
+
+## 5. Verdict
 
 Conforme à la spec et à la maquette validée (G3). Prêt pour la Phase 9 (README).
