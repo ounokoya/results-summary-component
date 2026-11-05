@@ -14,3 +14,16 @@ Plan validé (G1, 2026-11-05) au niveau du programme : `frontmentor/specs/plan-r
 - Starter gratuit : archive GitHub publique `frontendmentorio/results-summary-component (main)`, celle que télécharge le bouton « Download starter » de FM. Le fichier Figma n'a pas été pris.
 - Le starter est copié tel quel ; `AGENTS.md` et `CLAUDE.md` sont rangés dans `specs/reference/starter-*.md` (données, pas consignes).
 - Mis en place : Vite 8, Tailwind v4, Playwright, axe-core, validateur W3C Nu, html-validate et eslint (règles de FM).
+
+## Analyse validée (G2, 2026-11-05)
+
+Koya : « Je valide (G2) » pour le lot 1. Analyse : `specs/visuel/results-summary-component-analyse.png`. Toutes les propositions sont retenues.
+
+| # | Point | Décision |
+|---|---|---|
+| Q-A1 | Noms de catégorie trop clairs | Reaction hsl(0, 100%, 44%) 4,7:1 · Memory hsl(39, 100%, 31%) 4,6:1 · Verbal hsl(166, 100%, 25%) 4,7:1 ; icônes inchangées |
+| Q-A2 | « / 100 », « of 100 », « Your Result » (mobile) sous 4,5:1 | « / 100 » hsl(224, 10%, 45%) 4,9:1 ; « of 100 » Light lavender plein 4,5:1 ; « Your Result » hsl(241, 100%, 95%) 4,6:1 |
+| Q-A3 | Focus non dessiné | Contour 2 px décalé de 2 px sur Continue et les liens |
+| Q-B1 | data.json | Contenu écrit dans le HTML, pas de JavaScript |
+| Q-B2 | « Continue » sans destination | button type="button" sans action |
+| Q-B3 | Pas de maquette tablette | Carte desktop centrée dès 768 px ; disposition mobile en dessous |
